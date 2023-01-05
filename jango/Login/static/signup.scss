@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Special+Elite&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+@mixin display($display: flex, $jus: center, $align: center, $flex: row) {
+    display: $display;
+    justify-content: $jus;
+    align-items: $align;
+    flex-direction: $flex;
+}
+
+body {
+    background-image: url('./images/pexels-charles-kettor-831475.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .border {
+        height: 100vh;
+        // border: 2px solid black;
+        @include display;
+
+        .box {
+            width: 45%;
+            height: 95%;
+            background-color: rgba(0, 0, 0, 0.658);
+            border-radius: 2%;
+            font-size: 16px;
+            @include display($jus: space-around, $flex: column);
+            color: white;
+            position: relative;
+
+
+            @media(max-width:1160px) {
+                width: 65%;
+            }
+
+            .bubbles {
+                position: absolute;
+                width: 15px;
+                top: 20px;
+                left: 100px;
+                border-radius: 50%;
+                height: 15px;
+                background-color: rgba(255, 0, 0, 0.276);
+                border: 2px solid rgba(0, 0, 0, 0.356);
+                transform: translate(-50%, -50%);
+                transition: 1.5s;
+                animation: movee infinite linear;
+                animation-duration: 5s;
+            }
+
+            @keyframes movee {
+                0% {
+                    width: 15px;
+                    height: 15px;
+                    transform: translateY(-20px);
+                    box-shadow: 5px 1px 1px 1px rgba(0, 0, 0, 0.313), -5px 1px 1px 1px rgba(0, 0, 0, 0.295), -1px -5px 1px 1px rgba(0, 0, 255, 0.162);
+                }
+
+                25% {
+                    width: 20px;
+                    height: 20px;
+                    box-shadow: 10px 1px 1px 1px rgba(0, 0, 0, 0.313), -10px 1px 1px 1px rgba(0, 0, 0, 0.295), -1px -10px 1px 1px rgba(0, 0, 255, 0.153);
+                    transform: translateY(-70px);
+                }
+
+                50% {
+                    width: 25px;
+                    height: 25px;
+                    transform: translateY(-100px);
+                    box-shadow: 25px 1px 1px 1px rgba(0, 0, 0, 0.313), -25px 1px 1px 1px rgba(0, 0, 0, 0.295), -1px -25px 1px 1px rgba(0, 0, 255, 0.192);
+
+                }
+
+                75% {
+                    width: 30px;
+                    height: 30px;
+                    transform: translateY(-140px);
+                    box-shadow: 30px 1px 1px 1px rgba(0, 0, 0, 0.313), -30px 1px 1px 1px rgba(0, 0, 0, 0.295), -1px -30px 1px 1px rgba(0, 0, 255, 0.185);
+
+                }
+
+                100% {
+                    width: 35px;
+                    height: 35px;
+                    transform: translateY(-200px);
+                    box-shadow: 50px 1px 1px 1px rgba(0, 0, 0, 0.313), -50px 1px 1px 1px rgba(0, 0, 0, 0.295), -1px -50px 1px 1px rgba(0, 0, 255, 0.18);
+                    visibility: hidden;
+
+                }
+            }
+
+            .one {
+                width: 90%;
+                height: 10%;
+                @include display($jus: space-around);
+                // border: 2px solid white;
+
+                .div1 {
+                    @include display;
+                    font-size: 1.3em;
+                    letter-spacing: 1px;
+
+                    @media(max-width:721px) {
+                        font-size: 0.9em;
+                    }
+                }
+
+                .div2 {
+                    padding: 10px 15px;
+                    background-color: white;
+                    border-radius: 20%;
+                    transition: 0.8s;
+                    @include display;
+
+                    a {
+                        font-size: 1.3em;
+                        color: red;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.365);
+
+                    }
+                }
+            }
+
+            .two {
+                width: 90%;
+                height: 24%;
+                @include display($flex: column);
+                // border: 2px solid white;
+
+                .divicon {
+                    width: 85%;
+                    height: 46%;
+                    // border: 2px solid white;
+                    @include display;
+                    color: red;
+                    font-size: 3.5em;
+                }
+
+                .divtxt {
+                    font-size: 1.5em;
+                    @include display;
+                    width: 85%;
+                    height: 46%;
+                    // border: 2px solid white;
+                    font-family: 'Yeon Sung', cursive;
+                }
+            }
+
+
+            form {
+                width: 90%;
+                // border: 2px solid white;
+                height: 55%;
+                @include display($flex: column);
+                gap: 5px;
+
+                .three {
+                    width: 90%;
+                    height: 20%;
+                    // border: 2px solid red;
+                    @include display;
+
+                    .usertxt {
+                        width: 90%;
+                        height: 75%;
+                        background: rgba(255, 0, 0, 0.326);
+                        border: none;
+                        outline: none;
+                        border-radius: 10px;
+                        color: gold;
+
+                        &::placeholder {
+                            color: white;
+                        }
+
+                        &:focus {
+                            border-bottom: 3px solid rgb(0, 94, 255);
+                            background-color: rgba(0, 0, 0, 0.256);
+                        }
+
+                    }
+                }
+
+
+                .four {
+                    width: 90%;
+                    height: 20%;
+                    // border: 2px solid red;
+                    @include display;
+
+                    .emailtxt {
+                        width: 90%;
+                        height: 75%;
+                        background: rgba(255, 0, 0, 0.326);
+                        border: none;
+                        outline: none;
+                        border-radius: 10px;
+                        color: gold;
+
+                        &::placeholder {
+                            color: white;
+                        }
+
+                        &:focus {
+                            border-bottom: 3px solid rgb(0, 94, 255);
+                            background-color: rgba(0, 0, 0, 0.256);
+                        }
+
+                    }
+                }
+
+
+                .five {
+                    width: 90%;
+                    height: 20%;
+                    // border: 2px solid red;
+                    @include display;
+
+                    .passwordtxt {
+                        width: 90%;
+                        height: 75%;
+                        background: rgba(255, 0, 0, 0.326);
+                        border: none;
+                        outline: none;
+                        border-radius: 10px;
+                        color: gold;
+
+                        &::placeholder {
+                            color: white;
+                        }
+
+                        &:focus {
+                            border-bottom: 3px solid rgb(0, 94, 255);
+                            background-color: rgba(0, 0, 0, 0.256);
+                        }
+
+                    }
+                }
+
+                .six {
+                    width: 90%;
+                    height: 15%;
+                    // border: 2px solid red;
+                    @include display($jus: space-around);
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    font-family: 'Special Elite', cursive;
+
+                    .radio1 {
+                        @include display;
+                        color: rgb(221, 7, 240);
+
+                        #m {
+                            accent-color: rgba(255, 0, 0, 0.235);
+                            width: 20px;
+                            height: 20px;
+
+
+                        }
+                    }
+
+                    .radio2 {
+                        @include display;
+                        color: rgb(17, 70, 244);
+
+                        #f {
+                            width: 20px;
+                            height: 20px;
+                            accent-color: red;
+                        }
+                    }
+                }
+
+
+                .seven {
+                    width: 90%;
+                    height: 15%;
+                    // border: 2px solid red;
+                    @include display;
+                    font-size: 1.5em;
+
+                    .signinbtn {
+                        width: 25%;
+                        height: 85%;
+                        @include display;
+                        background-color: white;
+                        border-radius: 10%;
+                        transition: 1.2s;
+
+                        a {
+                            color: red;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.365);
+
+                        }
+                    }
+
+                    @media(max-width:1174px) {
+                        font-size: 1.2em;
+                    }
+
+                    @media(max-width:961px) {
+                        font-size: 0.8em;
+                    }
+
+
+                }
+
+
+
+            }
+        }
+    }
+}

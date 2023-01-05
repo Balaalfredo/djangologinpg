@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Moon+Dance&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Special+Elite&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+@mixin display($display: flex, $jus: center, $align: center, $flex: row) {
+    display: $display;
+    justify-content: $jus;
+    align-items: $align;
+    flex-direction: $flex;
+}
+
+body {
+    background-image: url('./images/pexels-fauxels-3183198.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    .border {
+
+        height: 100vh;
+        // border: 3px solid black;
+        @include display($jus: center);
+
+        @media(max-width:1035px) {
+            flex-direction: column;
+        }
+
+        .left {
+            margin: 20px;
+            width: 45%;
+            height: 85%;
+            // border: 4px solid rgba(255, 255, 255, 0.434);
+            border-radius: 20px;
+            @include display($flex: column, $jus: space-around);
+            font-size: 16px;
+            background-color: #19182189;
+            box-shadow: 2px 1px 1px 1px rgba(14, 13, 13, 0.607),
+                3px 1px 1px 1px rgba(14, 13, 13, 0.607), 4px 2px 1px 1px rgba(14, 13, 13, 0.607);
+
+
+            @media(max-width:1035px) {
+                width: 70%;
+
+            }
+
+
+
+            @media(max-width:1285.60px) {
+                font-size: 12px;
+            }
+
+            // @media(max-width:1200px) {
+            //     font-size: 12px;
+            // }
+
+            @media(max-width:700px) {
+                font-size: 9px;
+
+            }
+
+            .first {
+                text-transform: uppercase;
+                font-size: 5.8em;
+                color: blueviolet;
+                text-shadow: 2px 1px 1px black, 3px 1px 1px black,
+                    4px 2px 1px black, 5px 1px 1px black, 6px 2px 1px black;
+                font-weight: 700;
+                text-align: center;
+                padding: 10px 12px;
+                background-color: rgba(255, 255, 255, 0.445);
+                font-family: 'Lobster Two', cursive;
+                width: 85%;
+                // border: 3px solid white;
+            }
+
+            .third {
+                width: 85%;
+                height: 35%;
+                // border: 2px solid white;
+                @include display;
+                font-size: 5em;
+                text-align: center;
+                letter-spacing: 4px;
+                text-shadow: 2px 1px 1px black, 3px 1px 1px black;
+                font-family: 'Dancing Script', cursive;
+                font-weight: 700;
+                color: blue;
+            }
+
+
+            .sec {
+                // border: 3px solid white;
+                width: 85%;
+                height: 35%;
+                @include display($jus: space-around);
+                font-size: 3em;
+
+
+                .login {
+                    width: 30%;
+                    height: 45%;
+                    @include display;
+                    // border: 3px solid black;
+                    border-radius: 20px;
+
+                    background-color: rgba(255, 255, 255, 0.306);
+
+                    a {
+                        padding: 10px 12px;
+                        text-decoration: none;
+                        color: white;
+                        text-transform: capitalize;
+                        font-weight: 750;
+                        font-family: 'Special Elite', cursive;
+                        text-shadow: 2px 1px 1px black, 3px 1px 1px black,
+                            4px 1px 1px black, 5px 1px 1px black, 6px 1px 1px black;
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.543);
+
+                        a {
+                            color: gold;
+                        }
+                    }
+
+                }
+
+
+                .sign {
+                    width: 30%;
+                    height: 45%;
+                    @include display;
+                    // border: 3px solid black;
+                    border-radius: 20px;
+                    background-color: rgba(255, 255, 255, 0.306);
+
+                    a {
+                        padding: 10px 12px;
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Special Elite', cursive;
+                        text-transform: capitalize;
+                        font-weight: 750;
+                        text-shadow: 2px 1px 1px black, 3px 1px 1px black,
+                            4px 1px 1px black, 5px 1px 1px black, 6px 1px 1px black;
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.543);
+
+                        a {
+                            color: gold;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+}

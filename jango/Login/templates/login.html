@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    {% block link %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    {% endblock %}
+    <title>Login</title>
+</head>
+
+<body>
+
+</body>
+<div class="border">
+    <div class="left">
+        <div class="first">to do list</div>
+        {% block third %}
+        {% endblock %}
+        <div class="sec">
+            <div class="login"><a href='/login/'>login</a></div>
+            <div class="sign"><a href='/sign/'>sign</a></div>
+        </div>
+    </div>
+
+    {% block content %}
+
+
+    <div class="right">
+        <form>
+            <div class="one">
+                <div class="wel">welcome back!</div>
+                <div class="acc">login to your account</div>
+            </div>
+
+            <div class="two">
+                <div class="user">Email</div>
+                <div class="txt-inp"><input type="email" class="inp1" placeholder="Email" required></div>
+            </div>
+            <div class="three">
+
+                <div class="pass">Password</div>
+                <div class="txt-inp1"><input type="password" class="inp2" placeholder="Password" required></div>
+
+
+            </div>
+            <div class="four">
+                <div class="loginsubmit"><a href="#">Login</a></div>
+            </div>
+
+        </form>
+    </div>
+
+    {% endblock %}
+</div>
+
+</html>

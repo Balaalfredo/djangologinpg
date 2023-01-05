@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Special+Elite&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/pexels-jack-hawley-21323.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .border {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 1035px) {
+  body .border {
+    flex-direction: column;
+  }
+}
+body .border .left {
+  margin: 20px;
+  width: 45%;
+  height: 620px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: rgba(25, 24, 33, 0.537254902);
+  box-shadow: 2px 1px 1px 1px rgba(14, 13, 13, 0.607), 3px 1px 1px 1px rgba(14, 13, 13, 0.607), 4px 2px 1px 1px rgba(14, 13, 13, 0.607);
+}
+@media (max-width: 1035px) {
+  body .border .left {
+    width: 70%;
+    height: 450px;
+  }
+}
+@media (max-width: 1200px) {
+  body .border .left {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  body .border .left {
+    font-size: 9px;
+  }
+}
+body .border .left .first {
+  text-transform: uppercase;
+  font-size: 5.8em;
+  color: blueviolet;
+  text-shadow: 2px 1px 1px black, 3px 1px 1px black, 4px 2px 1px black, 5px 1px 1px black, 6px 2px 1px black;
+  font-weight: 700;
+  padding: 10px 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.614);
+  font-family: "Lobster Two", cursive;
+  width: 85%;
+}
+body .border .left .sec {
+  width: 85%;
+  height: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: 3em;
+}
+body .border .left .sec .login {
+  width: 30%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.306);
+  font-family: "Special Elite", cursive;
+}
+body .border .left .sec .login a {
+  padding: 10px 12px;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 750;
+  text-shadow: 2px 1px 1px black, 3px 1px 1px black, 4px 1px 1px black, 5px 1px 1px black, 6px 1px 1px black;
+}
+body .border .left .sec .login:hover {
+  background-color: rgba(255, 255, 255, 0.543);
+}
+body .border .left .sec .login:hover a {
+  color: gold;
+}
+body .border .left .sec .sign {
+  width: 30%;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.306);
+  font-family: "Special Elite", cursive;
+}
+body .border .left .sec .sign a {
+  padding: 10px 12px;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 750;
+  text-shadow: 2px 1px 1px black, 3px 1px 1px black, 4px 1px 1px black, 5px 1px 1px black, 6px 1px 1px black;
+}
+body .border .left .sec .sign:hover {
+  background-color: rgba(255, 255, 255, 0.543);
+}
+body .border .left .sec .sign:hover a {
+  color: rgb(230, 51, 230);
+}
+body .border .right {
+  margin: 20px;
+  width: 45%;
+  height: 620px;
+  border-radius: 20px;
+  background-color: rgba(25, 24, 33, 0.537254902);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  box-shadow: 2px 1px 1px 1px rgba(14, 13, 13, 0.607), 3px 1px 1px 1px rgba(14, 13, 13, 0.607), 4px 2px 1px 1px rgba(14, 13, 13, 0.607);
+}
+@media (max-width: 1035px) {
+  body .border .right {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  body .border .right {
+    font-size: 13px;
+  }
+}
+body .border .right form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 98%;
+  height: 98%;
+}
+body .border .right form .one {
+  width: 85%;
+  height: 24%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .border .right form .one .wel {
+  margin-left: 25px;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  padding: 10px 15px;
+  font-weight: bolder;
+  color: blue;
+  letter-spacing: 3px;
+  font-family: cursive;
+  text-shadow: 2px 1px 1px black, 3px 1px 1px black, 4px 1px 1px black, 5px 1px 1px black;
+}
+body .border .right form .one .acc {
+  margin-left: 25px;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-family: "Special Elite", cursive;
+  font-weight: 800;
+  color: black;
+  padding: 10px 15px;
+  color: rgb(0, 242, 255);
+}
+body .border .right form .two {
+  width: 85%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .border .right form .two .user {
+  width: 85%;
+  margin: 10px;
+  margin-left: 20px;
+  font-size: 1.4em;
+  color: gold;
+  font-family: "Special Elite", cursive;
+}
+body .border .right form .two .txt-inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 45%;
+  width: 85%;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+body .border .right form .two .txt-inp:focus-within {
+  border: 2px solid blue;
+  box-shadow: 2px 1px 1px 1px rgba(14, 13, 13, 0.607), 3px 1px 1px 1px rgba(14, 13, 13, 0.607), 4px 2px 1px 1px rgba(14, 13, 13, 0.607);
+}
+body .border .right form .two .txt-inp .inp1 {
+  width: 90%;
+  height: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+body .border .right form .two .txt-inp .inp1::-moz-placeholder {
+  color: blue;
+}
+body .border .right form .two .txt-inp .inp1:-ms-input-placeholder {
+  color: blue;
+}
+body .border .right form .two .txt-inp .inp1::placeholder {
+  color: blue;
+}
+body .border .right form .three {
+  width: 85%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+body .border .right form .three .pass {
+  width: 85%;
+  margin: 10px;
+  margin-left: 20px;
+  font-size: 1.4em;
+  color: gold;
+  font-family: "Special Elite", cursive;
+}
+body .border .right form .three .txt-inp1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 45%;
+  width: 85%;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+body .border .right form .three .txt-inp1:focus-within {
+  border: 2px solid blue;
+  box-shadow: 2px 1px 1px 1px rgba(14, 13, 13, 0.607), 3px 1px 1px 1px rgba(14, 13, 13, 0.607), 4px 2px 1px 1px rgba(14, 13, 13, 0.607);
+}
+body .border .right form .three .txt-inp1 .inp2 {
+  width: 90%;
+  height: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+body .border .right form .three .txt-inp1 .inp2::-moz-placeholder {
+  color: blue;
+}
+body .border .right form .three .txt-inp1 .inp2:-ms-input-placeholder {
+  color: blue;
+}
+body .border .right form .three .txt-inp1 .inp2::placeholder {
+  color: blue;
+}
+body .border .right form .four {
+  width: 85%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .border .right form .four .loginsubmit {
+  width: 65%;
+  height: 70%;
+  background-color: aliceblue;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .border .right form .four .loginsubmit a {
+  font-weight: 600;
+  font-size: 2.5em;
+  text-decoration: none;
+  color: blue;
+}/*# sourceMappingURL=login.css.map */
